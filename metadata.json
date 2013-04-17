@@ -1,8 +1,7 @@
 {
 	"name":"Modern White",
-	"directory":"modernwhite",
-	"thumbnail":"/modernwhite/modernwhite.jpg",
-	"screenshot":"/modernwhite/modernwhite.jpg",
+	"thumbnail":"modernwhite.jpg",
+	"screenshot":"modernwhite.jpg",
 	"pageTypes":[],
 	"defaultColorSwatch":"Warmth 2",
 	"defaultFontSwatch":"Merriweather"
