@@ -382,18 +382,16 @@ hr.line.align-right {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color-swatch1), color-stop(100%,@color-swatch2));
     background: -webkit-linear-gradient(top, @color-swatch1 0%,@color-swatch2 100%);
     background: -ms-linear-gradient(top, @color-swatch1 0%,@color-swatch2 100%);
-
-    /* fonts */
-    font-family:@font-swatch6-font-family;
-    font-size:@font-swatch5-font-size;
-    letter-spacing: @font-swatch6-letter-spacing;
 }
+
 .widget.navigation ul li a
 {
     display: block;
     padding: 16px 20px;
     color: lighten(@color-swatch4,20%);
-    font-weight: @font-swatch6-font-weight;
+    font-family:@font-swatch6-font-family;
+    font-size:@font-swatch5-font-size;
+    letter-spacing: @font-swatch6-letter-spacing;
     text-decoration: none;
 }
 
@@ -499,6 +497,9 @@ hr.line.align-right {
     display:inline-block;
     padding: 16px 20px;
     color: lighten(@color-swatch4,20%);
+    font-family:@font-swatch6-font-family;
+    font-size:@font-swatch5-font-size;
+    letter-spacing: @font-swatch6-letter-spacing;
 }
 
 .widget.extendednavigation ul li.folder ul li .text 
@@ -517,8 +518,10 @@ hr.line.align-right {
 {
     display: block;
     padding: 16px 20px;
-    color: @font-swatch6-color;
-    font-weight: @font-swatch6-font-weight;
+    color: lighten(@color-swatch4,20%);
+    font-family:@font-swatch6-font-family;
+    font-size:@font-swatch5-font-size;
+    letter-spacing: @font-swatch6-letter-spacing;
     text-decoration: none;
 }
 
