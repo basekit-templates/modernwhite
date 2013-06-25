@@ -3,23 +3,11 @@
 {% block content %}
 
 <section class="page wrapper">
-	
+
     <header class="clearfix">
        {{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/logo.png')})|raw}}
        {{widget('extendednavigation', 'navigationheader', {})|raw}}
     </header>
-
-    <section class="intro">
-    	{{widget('content', 'intro', {"content":"<h2 style="text-align: center">DESIGN <span class="highlight">&amp;</span> BRANDING</h2>"})|raw}}
-    	<div class="widget line">
-            <hr class="line"></hr>
-        </div>
-        {{widget('content', 'introsub', {"content":"<h4 style="text-align: center">Lorem ipsum dolor sit amet consectetur adipiscing elit. Pellentesque fringilla  <br>ipsum vitae eleifend. Mauris dictum justo gravida fringilla libero sed ornare leo.</h4>"})|raw}}
-    </section>
-
-    <div class="wrapper">
-	    {{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"View our portfolio &nbsp;→", "originalImageWidth": "1500", 'originalOffsetCenter': '-482', 'defaultBgImg': asset('images/feature-bg.jpg'),"showBtn": true})|raw}}
-	</div>
 
 	<div class="main wrapper clearfix">
 	    {{zone('main')|raw}}

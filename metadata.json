@@ -2,7 +2,7 @@
 	"name":"Modern White",
 	"thumbnail":"modernwhite.jpg",
 	"screenshot":"modernwhite.jpg",
-	"pageTypes":[],
+	"pageTypes":["about"],
 	"defaultColorSwatch":"Warmth 2",
 	"defaultFontSwatch":"Merriweather"
 }
