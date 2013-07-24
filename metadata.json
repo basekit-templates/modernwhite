@@ -2,7 +2,9 @@
 	"name":"Modern White",
 	"thumbnail":"modernwhite.png",
 	"screenshot":"modernwhite.png",
-	"pageTypes":["about"],
+	"pageTypes":["home"],
+    "defaultColorSwatch":"Warmth 2",
+    "defaultFontSwatch":"Lato",
 	"colorSwatches":
     {
         "Swatch 1": {
