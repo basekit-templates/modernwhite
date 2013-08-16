@@ -2,75 +2,74 @@
 	"name":"Modern White",
 	"thumbnail":"modernwhite.png",
 	"screenshot":"modernwhite.png",
-	"pageTypes":["about"],
 	"colorSwatches":
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#f3f3f3",
+            "color2":"#efefef",
             "color3":"#f4594f",
             "color4":"#373737",
-            "color5":"#787878",
+            "color5":"#969696",
             "color6":"#484848",
             "color7":"#ffffff"
         },
         "Swatch 2": {
             "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#83c028",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
+            "color2":"#e6e9f1",
+            "color3":"#5e86e1",
+            "color4":"#4f5355",
+            "color5":"#7d8c97",
+            "color6":"#484848",
             "color7":"#ffffff"
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#83c028",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
+            "color2":"#f8f2eb",
+            "color3":"#000000",
+            "color4":"#f68414",
+            "color5":"#aaaaaa",
+            "color6":"#000000",
             "color7":"#ffffff"
         },
         "Swatch 4": {
             "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#83c028",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color2":"#f8f8f8",
+            "color3":"#94d8b7",
+            "color4":"#373737",
+            "color5":"#969696",
+            "color6":"#484848",
+            "color7":"#f8f8f8"
         },
         "Swatch 5": {
             "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#83c028",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
+            "color2":"#f3eef3",
+            "color3":"#d19dd0",
+            "color4":"#5f505f",
+            "color5":"#948e94",
+            "color6":"#5f505f",
             "color7":"#ffffff"
         }
     },
     "fontSwatch": {
        "title": "Lato",
         "font1": {
-            "font-family": "Lato",
-            "font-size": "36px",
+            "font-family": "Merriweather",
+            "font-size": "32px",
             "font-weight": "300",
-            "line-height": "28px",
+            "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
             "font-family": "Lato",
             "font-size": "24px",
-            "font-weight": "inherit",
+            "font-weight": "300",
             "line-height": "36px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "2px"
         },
         "font3": {
-            "font-family": "Lato",
+            "font-family": "Merriweather",
             "font-size": "18px",
             "font-weight": "inherit",
             "line-height": "28px",
@@ -78,7 +77,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "Lato",
+            "font-family": "Merriweather",
             "font-size": "16px",
             "font-weight": "inherit",
             "line-height": "26px",
@@ -86,20 +85,20 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "Lato",
+            "font-family": "Merriweather",
             "font-size": "14px",
             "font-weight": "inherit",
-            "line-height": "26px",
-            "color": "@color-swatch4",
+            "line-height": "28px",
+            "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "Lato",
+            "font-family": "Merriweather",
             "font-size": "15px",
             "font-weight": "inherit",
             "line-height": "28px",
             "color": "@color-swatch6",
-            "color-hover": "@color-swatch6",
+            "color-hover": "lighten(@color-swatch6,20%)",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
             "background-color-hover": "@color-swatch3"
@@ -111,8 +110,8 @@
             "line-height": "26px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
-            "background-color": "@color-swatch2",
-            "background-color-hover": "@color-swatch7"
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,8%)"
         },
         "font8": {
             "font-family": "Lato",
@@ -129,8 +128,14 @@
             "line-height": "28px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
+        },
+         "font10": {
+            "font-family": "Merriweather",
+            "font-size": "25px",
+            "font-weight": "300",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
         }
     }
-}
-
 }

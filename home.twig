@@ -2,46 +2,58 @@
 
 {% block content %}
 
-<section class="page wrapper">
+<div class="canvas">
 	
-    <header class="clearfix">
-       {{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/logo.png')})|raw}}
-       {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    </header>
-
-    <section class="intro">
-    	{{widget('content', 'intro', {"content":"<h2 style='text-align: center'>DESIGN <span class='highlight'>&amp;</span> BRANDING</h2>"})|raw}}
-    	<div class="widget line">
-            <hr class="line"></hr>
-        </div>
-        {{widget('content', 'introsub', {"content":"<h4 style='text-align: center'>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pellentesque fringilla  <br>ipsum vitae eleifend. Mauris dictum justo gravida fringilla libero sed ornare leo.</h4>"})|raw}}
-    </section>
-
-    <div class="wrapper">
-    	{{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"View our portfolio →","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
-	</div>
-
-	<div class="main wrapper clearfix">
-	    {{zone('main')|raw}}
-	</div>
-
-	<footer>
-	    <div class="wrapper">
-	        <div class="responsivecolumns columns-three-33-34-33">
-	            <div class="column columns-three-left">
-	                {{widget('content', 'footercolumn1', {"content":'<h2>LOREM IPSUM</h2><p>Integer a Tortor dui nullam nec antemi morbi sodales urna sit amet mauris.</p>'})|raw}}
-	            </div>
-	            <div class="column columns-three-middle">
-	                {{widget('content', 'footercolumn2', {"content":'<h2>MORBI ALAM</h2><p><span>t:&nbsp;</span> (020) 12 345 678<br><span>e:&nbsp;</span> youremail@provider.com</p>'})|raw}}
-	            </div>
-	            <div class="column columns-three-right">
-	                {{widget('content', 'footercolumn3', {"content":'<h2>SOLADES</h2>'})|raw}}
-	                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/basekit', 'facebook': 'https://www.facebook.com/TeamBaseKit', 'twitter': 'https://twitter.com/basekit', 'youtube': 'https://www.youtube.com/user/TeamBaseKit', 'rss': 'http://blogdiseno.basekit.es/feed/'})|raw}}
-	            </div>
-	        </div>
+<header>
+	<div class="header-bg wrapper clearfix">
+	    <div class="companyheader clearfix">
+	        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
 	    </div>
-	</footer>
+	    {{widget('extendednavigation', 'navigationheader', {})|raw}}
+	</div>
+</header>
 
+<section class="intro wrapper">
+	{{widget('content', 'intro', {"content":"<h2 style='text-align: center'>DESIGN <span class='highlight'>&amp;</span> BRANDING</h2>"})|raw}}
+	<div class="widget line">
+        <hr class="line"></hr>
+    </div>
 </section>
+
+<div class="wrapper">
+	{{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"Lorem Ipsum &#8594;","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+</div>
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div>
+
+<footer>
+    <div class="wrapper">
+        <div class="responsivecolumns columns-three-33-34-33">
+            <div class="column columns-three-left">
+                {{widget('content', 'footercolumn1content1', {"content":'<h2>LOREM IPSUM</h2>'})|raw}}
+
+                {% if profile.companydescription|length > 0 %}  
+                   {{widget('profile', 'footercolumn1profilecompanydescription', { 'profileType':'companydescription', 'companydescription':'profile'})|raw}}
+                {% else %}
+                	{{widget('content', 'footercolumn1content2', {"content":'<p>Integer a Tortor dui nullam nec antemi morbi sodales urna sit amet mauris.</p>'})|raw}}
+                {% endif %}
+
+            </div>
+            <div class="column columns-three-middle">
+            	{{widget('content', 'footercolumn2content1', {"content":'<h2>THOATES ORA</h2>'})|raw}}
+                {{widget('profile', 'footercolumn2profileemail', { 'profileType':'phone', 'phone':'profile'})|raw}}
+            	{{widget('profile', 'footercolumn2profilephone', { 'profileType':'email', 'email':'profile'})|raw}}
+            </div>
+            <div class="column columns-three-right">
+                {{widget('content', 'footercolumn3content1', {"content":'<h2>SOLADES</h2>'})|raw}}
+                {{widget('profile', 'footercolumn3socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
 
 {% endblock %}
