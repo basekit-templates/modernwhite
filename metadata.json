@@ -2,6 +2,11 @@
 	"name":"Modern White",
 	"thumbnail":"modernwhite.png",
 	"screenshot":"modernwhite.png",
+    "tags": {
+    "en": ["minimal", "clean", "business", "modern"],
+    "es": ["minimalista", "limpio", "corporativo", "moderno"],
+    "br": ["minimalista", "limpo", "corporativo", "moderno"]
+    },
 	"colorSwatches":
     {
         "Swatch 1": {
