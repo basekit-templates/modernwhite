@@ -13,6 +13,17 @@
 	</div>
 </header>
 
+<section class="intro wrapper">
+	{{widget('content', 'intro', {"content":"<h2 style='text-align: center'>DESIGN <span class='highlight'>&amp;</span> BRANDING</h2>"})|raw}}
+	<div class="widget line">
+        <hr class="line"></hr>
+    </div>
+</section>
+
+<div class="wrapper">
+	{{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"Lorem Ipsum &#8594;","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+</div>
+
 <div class="main wrapper clearfix">
     {{zone('main')|raw}}
 </div>
