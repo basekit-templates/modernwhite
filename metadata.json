@@ -3,9 +3,9 @@
 	"thumbnail":"modernwhite.png",
 	"screenshot":"modernwhite.png",
     "tags": {
-    "en": ["minimal", "clean", "business", "modern"],
-    "es": ["minimalista", "limpio", "corporativo", "moderno"],
-    "br": ["minimalista", "limpo", "corporativo", "moderno"]
+    "en": ["minimal", "clean", "business", "modern", "company", "business", "corporate", "finance", "financial", "firm", "money", "open", "simple"],
+    "es": ["minimalista", "limpio", "corporativo", "moderno", "empresa", "negocios", "corporativo", "finanzas", "financiero", "firma", "dinero", "abierto", "simple"],
+    "br": ["minimalista", "limpo", "corporativo", "moderno", "empresa", "negócios", "corporativo", "finanças", "financeiro", "firma", "dinheiro", "aberto", "simples"]
     },
 	"colorSwatches":
     {
