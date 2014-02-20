@@ -4,9 +4,10 @@
 
 <div class="canvas">
 	
-<header>
+<header class="bk-header">
 	<div class="header-bg wrapper clearfix">
 	    <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
 	        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
 	    </div>
 	    {{widget('extendednavigation', 'navigationheader', {})|raw}}
@@ -28,7 +29,7 @@
     {{zone('main')|raw}}
 </div>
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper">
         <div class="responsivecolumns columns-three-33-34-33">
             <div class="column columns-three-left">
