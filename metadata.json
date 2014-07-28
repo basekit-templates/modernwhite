@@ -3,6 +3,7 @@
 	"thumbnail":"modernwhite.png",
 	"screenshot":"modernwhite.png",
 	"templateType":"standard",
+    "pageTypes": ["home"],
     "tags": {
     "en": ["minimal", "clean", "business", "modern", "company", "business", "corporate", "finance", "financial", "firm", "money", "open", "simple"],
     "es": ["minimalista", "limpio", "corporativo", "moderno", "empresa", "negocios", "corporativo", "finanzas", "financiero", "firma", "dinero", "abierto", "simple"],
@@ -139,7 +140,7 @@
             "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "25px",
             "font-weight": "300",
-            "line-height": "36px",
+            "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         }

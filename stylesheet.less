@@ -80,7 +80,7 @@ header.bk-header {
 }
 
 header.bk-header .header-bg {
-    padding: 60px 0px;
+    padding: 60px 0px 30px;
     border-bottom: 1px solid @color-swatch2;
 }
 
@@ -93,14 +93,15 @@ header.bk-header .header-bg {
 @media @tablet {
     .infoheader {
         float:left;
+        max-width: 85%;
     }
 }
 
 /* COMPANY NAME */
 
 .widget.companyname {
-    display: block;
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .widget.companyname a {
@@ -120,9 +121,9 @@ header.bk-header .header-bg {
 /* LOGO */
 
 .widget.logo {
-    display: block;
-    float: left;
+    display: inline-block;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* ===============================
@@ -155,6 +156,7 @@ footer.bk-footer h2 {
 
 .widget {
     &.extendednavigation {
+        margin-top: 10px;
         .clearfix;
         z-index:1;
         ul {
@@ -183,7 +185,11 @@ footer.bk-footer h2 {
 
 .widget.extendednavigation ul li a,
 .widget.extendednavigation ul li.folder .text {
-    padding: 4px 30px;
+    padding: 10px 30px 5px;
+}
+
+.widget.extendednavigation ul li:first-child a {
+    padding-left: 0;
 }
 
 .widget.extendednavigation ul li a:hover,
@@ -977,6 +983,10 @@ footer.bk-footer h2 {
 
     /* NAV */
 
+    .widget.extendednavigation {
+         margin-top: 0;
+    }
+
     .widget .extendednavigation li {
         width: 100%
     }
@@ -988,6 +998,10 @@ footer.bk-footer h2 {
 
     .widget .extendednavigation li:last-child {
         border-bottom: none;
+    }
+
+    .widget.extendednavigation ul li:first-child a {
+        padding-left: 15px;
     }
 
     .widget.extendednavigation ul li a,
