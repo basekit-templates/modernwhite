@@ -63,7 +63,7 @@
             "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "32px",
             "font-weight": "300",
-            "line-height": "34px",
+            "line-height": "40px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },

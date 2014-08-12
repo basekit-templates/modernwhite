@@ -349,6 +349,8 @@ footer.bk-footer h2 {
         // Tweet Link
         p a {
             color: @color-swatch5;
+            font-size: @font-swatch5-font-size;
+            line-height: @font-swatch5-line-height;
             text-decoration: none;
         }
         a:hover span.bk-full-name {
@@ -873,14 +875,15 @@ footer.bk-footer h2 {
 .form-group.productlist-search {
   position: relative;
   input[type=search] {
+    display: inline-block;
     padding-right: 0;
+    margin-right: 0;
     box-sizing: border-box;
-    width: 100%;
   }
   button {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
+    position: relative;
+    left: -5px;
+    vertical-align: top;
   }
 }
 
@@ -984,6 +987,9 @@ select {
     }
     .basket-summary-items {
       background: transparent;
+      td:first-child {
+        width: 25%;
+      }
       @media @mobile {
         display: table-row-group;
         + tr {
@@ -996,7 +1002,11 @@ select {
         }
       }
       .image-wrap {
-        background-image: none!important;
+        background-position: -9999px;
+        background-size: contain;
+        img {
+            max-width: 90%!important;
+        }
       }
       td:nth-child(2) {
         padding-left: 15px;
@@ -1008,11 +1018,18 @@ select {
       .basket-summary-pricepu {
         display: block;
       }
-      .basket-summary-quantity, .basket-summary-quantitybtn {
+      .basket-summary-quantity {
         display: inline-block;
+        margin: 10px 0 20px;
         button {
           height: auto;
           line-height: initial;
+        }
+      }
+      .basket-summary-quantitybtn {
+        display: block;
+        span {
+            padding: 0 10px;
         }
       }
       .basket-summary-amount {
@@ -1034,6 +1051,7 @@ select {
 .basket-summary-submit, .basket-summary-empty-cta {
   display: inline-block;
   padding: 0 12px;
+  margin-bottom: 15px;
   line-height: 45px;
   height: 45px;
   font-weight: @font-swatch7-font-weight;
@@ -1355,4 +1373,15 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
         padding: 20px;
     }
 
+    .productlist-filter .form-group button.btn {
+        left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .basket-summary-items {
+        .image-wrap img {
+            max-width: 125px!important;
+        }
+    }
 }
