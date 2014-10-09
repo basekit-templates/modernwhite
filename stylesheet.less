@@ -1059,7 +1059,15 @@ select {
 
 /* Forms */
 
-input, textarea {
+input.text, input.email, textarea,
+.contactform input, .contactform textarea,
+.widget.profile form fieldset input.email,
+.signupform fieldset input.email,
+.blogsearch input.blog-search-input,
+.widget input[type="text"],
+.widget input[type="email"],
+.productlist-filter .productlist-search input,
+.signupform fieldset input {
     background-color: @color-swatch7;
     border: 1px solid lighten(@color-swatch5, 25%);
     -webkit-appearance: none;
