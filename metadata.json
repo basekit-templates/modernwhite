@@ -1,7 +1,7 @@
 {
 	"name":"Modern White",
 	"thumbnail":"modernwhite.png",
-	"screenshot":"modernwhite.png",
+	"screenshot":"modernwhite-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
