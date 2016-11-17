@@ -19,7 +19,7 @@ body {
 }
 
 
-@media only screen and (min-width: 1140px) { 
+@media only screen and (min-width: 1140px) {
     .wrapper {
         width: 960px;
         margin: 0 auto;
@@ -72,10 +72,10 @@ section.intro hr.line {
 }
 
 .transition (@prop: all, @time: 0.5s, @ease: ease) {
-    -webkit-transition: @prop @time @ease;  
+    -webkit-transition: @prop @time @ease;
     -moz-transition:    @prop @time @ease;
-    -ms-transition:     @prop @time @ease; 
-    -o-transition:      @prop @time @ease;  
+    -ms-transition:     @prop @time @ease;
+    -o-transition:      @prop @time @ease;
     transition:         @prop @time @ease;
 }
 
@@ -306,7 +306,7 @@ footer.bk-footer h2 {
         p {
             color: @color-swatch4;
             padding: 0;
-        } 
+        }
         ul {
             li {
                 border-bottom: 1px solid @color-swatch2;
@@ -469,7 +469,7 @@ footer.bk-footer h2 {
 }
 
 .widget.socialicons span a:hover,
-.widget.profile 
+.widget.profile
 .bk-profile-socialicons span a:hover {
     background-color: @font-swatch7-background-color-hover
 }
@@ -621,7 +621,7 @@ footer.bk-footer h2 {
         .btn-next {
             background-image: image('/images/slideshow-arrow-right.png');
             background-repeat: no-repeat;
-            background-position: center;    
+            background-position: center;
         }
         /* Play Button */
         .btn-play {
@@ -837,7 +837,7 @@ footer.bk-footer h2 {
         label {
             display: block;
             padding-bottom: .4em;
-        }  
+        }
         select {
             width: auto;
             @media @tablet {
@@ -857,7 +857,7 @@ footer.bk-footer h2 {
 
 .widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
     padding: 10px 5px 10px 0;
-    margin: 0 5px 0 0; 
+    margin: 0 5px 0 0;
 }
 
 .productlist-display-form .form-group {
@@ -929,7 +929,7 @@ select {
     width: 100%;
     padding: 0;
 
-  } 
+  }
   .form-group.productlist-search button {
     margin-left: -4px;
     width: 25%;
@@ -967,7 +967,7 @@ select {
     color: @color-swatch4;
     margin-bottom: 20px;
     margin-top: 10px;
-    tr:first-child { 
+    tr:first-child {
       @media @mobile {
           display: table-header-group;
           th:nth-child(2) {
@@ -1071,7 +1071,7 @@ input.text, input.email, textarea,
     background-color: @color-swatch7;
     border: 1px solid lighten(@color-swatch5, 25%);
     -webkit-appearance: none;
-    -webkit-border-radius:0; 
+    -webkit-border-radius:0;
     border-radius:0;
     padding: 12px;
     @media @mobile {
@@ -1132,7 +1132,8 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
 }
 
 .widget {
-    &.contactform {
+    &.contactform,
+    .advancedcontactform {
         label {
             font-family: @font-swatch3-font-family;
             font-size: @font-swatch3-font-size;
@@ -1252,7 +1253,7 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
    IPAD WIDTH
    =============================== */
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
 
     header.bk-header .header-bg {
         padding: 30px 0px 22px;
@@ -1332,7 +1333,7 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
    IPHONE WIDTH
    =============================== */
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 
     body {
         margin: 0;
@@ -1355,7 +1356,7 @@ button.blog-search-submit-button, .widget.signupform button, .widget.profile but
         padding: 2em 0;
     }
 
-    footer.bk-footer .columns-three-left, 
+    footer.bk-footer .columns-three-left,
     footer.bk-footer .columns-three-middle {
         border-bottom: 1px solid @color-swatch2;
         padding: 0 0 30px;
