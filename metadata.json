@@ -1,5 +1,6 @@
 {
 	"name":"Modern White",
+	"versionTenCompatible": 1,
 	"thumbnail":"modernwhite.png",
 	"screenshot":"modernwhite-screenshot.jpg",
 	"templateType":"standard",
