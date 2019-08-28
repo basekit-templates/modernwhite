@@ -14,12 +14,17 @@
     width: 100%;
     margin: 0;
 }
+
 .main {
     padding: 0;
 }
 
 .widget.content {
     overflow: inherit;
+}
+
+footer.bk-footer {
+    margin-top: 0;
 }
 
 
@@ -59,10 +64,10 @@
 
 // Move spacing to last widget in the main zone (not sections)
 #page-zones__main > .widget:not(.row):last-child {
-    margin-bottom: @widget__spacing--first;
+    margin-bottom: 3em;
 
-    @media @tablet {
-        margin-bottom: 50px;
+    @media @mobile {
+        margin-bottom: 1.5em;
     }
 }
 
